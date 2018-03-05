@@ -34,15 +34,24 @@ else:
 bot = InstaBot(
     login=os.environ.get('LOGIN'),
     password=os.environ.get('PASSWORD'),
-    like_per_day=1000,
-    comments_per_day=72,
-    tag_list=['lingerie', 'bdsm', 'bondage', 'mistress', 'submissive', 'dominatrix', 'bdsmlifestyle', 'fetishmodel', 'leatherfetish', 'cute', 'f4'],
-    tag_blacklist=['rain', 'thunderstorm'],
+    like_per_day=560,
+    comments_per_day=0,
+    tag_list=['thefashionpr0ject', 'beautyart', 'artcollaboration', 'collaboration', 
+	      'beautymag', 'stylepost', 'styleinfluencer','fashionmagazine', 'fashionable', 
+	      'mood', 'vogue', 'editorialmodel', 'fashioneditorial', 'alternativefashion', 'vegan', 
+	      'grungestyle', 'grungegirl', 'pale', 'palegrunge', 'alternativestyle', 'tumblrstyle', 
+	      'tumblrgirl', 'luxurywedding', 'ootd', 'fashiongram', 'fashiondiaries', 'fashionblogger', 
+	      'fashionaddict', 'london', 'londonlife', 'thefashionforce', 'madeinspain', 'handcrafter', 
+	      'fascinators', 'film', 'CSM', 'ballerinaproject', 'ballerinasofig', '#photooftheday', '#tagsforlikes', 
+	      '#instagood', '#fashion', '#abstractexpressionist', '#streetart', 'followforfollow', 
+	      'randomart', 'fashionista', 'metropolitanopera', 'ballerinas', 'whales', 'moda', 'madrid', 
+	      'madridstreetstyle', 'madrid', 'spain', 'alternativemodel', 'wilde', 'curvymodel', 'realsize', 'zara'],
+    tag_blacklist=['porn', 'hentai', 'gale'],
     user_blacklist={},
-    max_like_for_one_tag=10,
-    follow_per_day=300,
+    max_like_for_one_tag=50,
+    follow_per_day=0,
     follow_time=1 * 60,
-    unfollow_per_day=300,
+    unfollow_per_day=0,
     unfollow_break_min=15,
     unfollow_break_max=30,
     log_mod=0,
@@ -54,12 +63,8 @@ bot = InstaBot(
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
     ### 'free_followers' will be blocked because it contains 'free'
     unwanted_username_list=[
-        'second', 'stuff', 'art', 'project', 'love', 'life', 'food', 'blog',
-        'free', 'keren', 'photo', 'graphy', 'indo', 'travel', 'art', 'shop',
-        'store', 'sex', 'toko', 'jual', 'online', 'murah', 'jam', 'kaos',
-        'case', 'baju', 'fashion', 'corp', 'tas', 'butik', 'grosir', 'karpet',
-        'sosis', 'salon', 'skin', 'care', 'cloth', 'tech', 'rental', 'kamera',
-        'beauty', 'express', 'kredit', 'collection', 'impor', 'preloved',
+        'second', 'sex', 'online', 'murah', 'kaos',
+      
         'follow', 'follower', 'gain', '.id', '_id', 'bags'
     ],
     unfollow_whitelist=['example_user_1', 'example_user_2'])
