@@ -91,6 +91,7 @@ while True:
     #time.sleep(30)
 
     if mode == 0:
+        print("%s",os.environ.get('LOGIN'))
         bot.new_auto_mod()
 
     elif mode == 1:
