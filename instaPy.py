@@ -92,7 +92,6 @@ while True:
 
     if mode == 0:
         bot.new_auto_mod()
-	print(os.environ.get('LOGIN'))
 
     elif mode == 1:
         check_status(bot)
