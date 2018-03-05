@@ -8,7 +8,6 @@ from src.check_status import check_status
 from src.feed_scanner import feed_scanner
 from src.follow_protocol import follow_protocol
 from src.unfollow_protocol import unfollow_protocol
-from boto.s3.connection import S3Connection
 
 from random import randrange
 aleatorio = randrange(5, 10)
@@ -92,6 +91,7 @@ while True:
     #time.sleep(30)
 
     if mode == 0:
+	print(os.environ.get('LOGIN', None))
         bot.new_auto_mod()
 
     elif mode == 1:
