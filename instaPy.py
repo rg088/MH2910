@@ -127,4 +127,5 @@ while True:
 
     else:
         print("Wrong mode!")
-	time.sleep(12*60*60)
+        #Si modo incorrecto dormir por 12 horas
+        time.sleep(12*60*60)
