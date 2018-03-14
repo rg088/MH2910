@@ -127,3 +127,4 @@ while True:
 
     else:
         print("Wrong mode!")
+	time.sleep(12*60*60)
